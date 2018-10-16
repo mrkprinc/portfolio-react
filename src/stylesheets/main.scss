@@ -1,0 +1,73 @@
+$white: #fcfaf9;
+$black: #2c2934;
+$dark-red: #99080f;
+
+$body-font: 'Open Sans', sans-serif;
+$header-font: 'Georgia', serif;
+$font-size: 16px;
+
+$max-width: 960px;
+$standard-padding: 10px 16px;
+
+@mixin bottom-border($color) {
+  border-bottom: 3px solid $color;
+  box-shadow: 0 0 2px $color;
+}
+@mixin animation($name) {
+  animation: $name;
+  animation-duration: 1.25s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+@mixin dark($color) {
+  background-color: $color;
+  color: $white;
+}
+
+html, body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  min-width: 325px;
+}
+
+body {
+  background-color: $white;
+  font-family: $body-font;
+  font-size: $font-size;
+  color: $black;
+}
+
+header {
+  @include bottom-border($dark-red);
+  background-color: $white;
+  color: $dark-red;
+  font-size: 20px;
+  font-family: $header-font;
+  z-index: 10;
+  overflow: hidden;
+
+  #heading-content {
+    position: relative;
+    max-width: $max-width;
+    margin: 0 auto;
+
+    span {
+      display: inline-block;
+      padding: $standard-padding;
+      @include animation(slideInRight);
+    }
+
+    #myName {
+      @include dark($dark-red);
+      margin: 8px 0 0 8px;
+      font-weight: 700;
+    }
+  }
+}
+
+@keyframes slideInRight {
+  from {transform: translateX(500px); opacity: 0.5;}
+  to {transform: translateX(0); opacity: 1}
+}

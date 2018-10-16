@@ -1,0 +1,46 @@
+html, body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  min-width: 325px; }
+
+body {
+  background-color: #fcfaf9;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #2c2934; }
+
+header {
+  border-bottom: 3px solid #99080f;
+  box-shadow: 0 0 2px #99080f;
+  background-color: #fcfaf9;
+  color: #99080f;
+  font-size: 20px;
+  font-family: "Georgia", serif;
+  z-index: 10;
+  overflow: hidden; }
+  header #heading-content {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto; }
+    header #heading-content span {
+      display: inline-block;
+      padding: 10px 16px;
+      animation: slideInRight;
+      animation-duration: 1.25s;
+      animation-fill-mode: both;
+      animation-timing-function: ease-out; }
+    header #heading-content #myName {
+      background-color: #99080f;
+      color: #fcfaf9;
+      margin: 8px 0 0 8px;
+      font-weight: 700; }
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(500px);
+    opacity: 0.5; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }

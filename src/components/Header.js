@@ -3,7 +3,12 @@ import React, {Component} from "react";
 class Header extends Component {
   render() {
     return (
-      <header>My portfolio</header>
+      <header>
+        <div id='heading-content'>
+          <span id='myName' class='dark'>Mark Prince</span>
+          <span id='myRole'>Portfolio</span>
+        </div>
+      </header>
     )
   }
 }
