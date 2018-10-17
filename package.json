@@ -14,7 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass-compile": "node-sass src/stylesheets/main.scss public/assets/styles.css"
+    "sass-compile": "node-sass src/stylesheets/main.scss public/assets/styles.css && node-sass src/stylesheets/BackgroundBox.scss src/components/BackgroundBox/BackgroundBox.css" 
   },
   "eslintConfig": {
     "extends": "react-app"

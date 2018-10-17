@@ -5,7 +5,7 @@ class Header extends Component {
     return (
       <header>
         <div id='heading-content'>
-          <span id='myName' class='dark'>Mark Prince</span>
+          <span id='myName' className='dark'>Mark Prince</span>
           <span id='myRole'>Portfolio</span>
         </div>
       </header>

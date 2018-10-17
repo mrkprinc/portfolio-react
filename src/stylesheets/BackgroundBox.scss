@@ -1,0 +1,62 @@
+.box {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  opacity: 0.3;
+  flex-shrink: 0;
+}
+
+.box-00 {
+  width: 38.2%;
+  height: 38.2%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #fac79f;
+}
+
+.box-narrow {
+  width: 1.5%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: #fac79f;
+}
+
+.box-10 {
+  width: 19.1%;
+  height: 19.1%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #425e7a;
+}
+
+.box-01 {
+  width: 19.1%;
+  height: 19.1%;
+  position: absolute;
+  bottom: 0px;
+  left: 19.1%;
+  background-color: #425e7a;
+}
+
+.box-11 {
+  width: 61.8%;
+  height: 61.8%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #e22d28;
+}
+
+.box-line {
+  width: 80.9%;
+  height: 80.9%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-top: 8px solid #425e7a;
+  border-left: 8px solid #425e7a;
+}

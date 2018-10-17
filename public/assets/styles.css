@@ -1,3 +1,22 @@
+@keyframes slideInRight {
+  from {
+    transform: translateX(500px);
+    opacity: 0.5; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+#background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+#background .row {
+  display: flex;
+  justify-content: center; }
+
 html, body {
   position: absolute;
   top: 0;
@@ -37,10 +56,6 @@ header {
       margin: 8px 0 0 8px;
       font-weight: 700; }
 
-@keyframes slideInRight {
-  from {
-    transform: translateX(500px);
-    opacity: 0.5; }
-  to {
-    transform: translateX(0);
-    opacity: 1; } }
+#background {
+  overflow: hidden;
+  z-index: -10; }

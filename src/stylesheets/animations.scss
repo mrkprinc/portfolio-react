@@ -1,0 +1,11 @@
+@mixin animation($name) {
+  animation: $name;
+  animation-duration: 1.25s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideInRight {
+  from {transform: translateX(500px); opacity: 0.5;}
+  to {transform: translateX(0); opacity: 1}
+}

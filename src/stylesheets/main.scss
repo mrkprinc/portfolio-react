@@ -1,3 +1,5 @@
+@import "./animations.scss";
+
 $white: #fcfaf9;
 $black: #2c2934;
 $dark-red: #99080f;
@@ -9,15 +11,28 @@ $font-size: 16px;
 $max-width: 960px;
 $standard-padding: 10px 16px;
 
+%cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+%xCenter {
+  display: flex;
+  justify-content: center;
+}
+
+%xyCenter {
+  flex-direction: column;
+  align-items: center;
+  @extend %xCenter;
+}
+
 @mixin bottom-border($color) {
   border-bottom: 3px solid $color;
   box-shadow: 0 0 2px $color;
-}
-@mixin animation($name) {
-  animation: $name;
-  animation-duration: 1.25s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-out;
 }
 @mixin dark($color) {
   background-color: $color;
@@ -67,7 +82,12 @@ header {
   }
 }
 
-@keyframes slideInRight {
-  from {transform: translateX(500px); opacity: 0.5;}
-  to {transform: translateX(0); opacity: 1}
+#background {
+  @extend %cover;
+  overflow: hidden;
+  z-index: -10;
+
+  .row {
+    @extend %xCenter;
+  }
 }
