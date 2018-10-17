@@ -12,6 +12,30 @@ class App extends Component {
     super(props);
     this.state.rows = Math.ceil(window.innerHeight / 300);
     this.state.cols = Math.ceil(window.innerWidth / 300);
+    this.resizeGrid = this.resizeGrid.bind(this);
+    window.resize = true;
+    window.timer = null;
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.resizeGrid);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resizeGrid);
+  }
+
+  resizeGrid() {
+    if(window.resize) {
+      this.setState({
+        rows: Math.ceil(window.innerHeight / 300),
+        cols: Math.ceil(window.innerWidth / 300)
+      })
+      window.resize = false;
+      window.timer = setTimeout(e=> {
+        window.resize = true;
+      }, 500);
+    }
   }
 
   render() {
