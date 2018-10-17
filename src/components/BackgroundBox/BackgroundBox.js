@@ -4,7 +4,7 @@ import "./BackgroundBox.css";
 class BackgroundBox extends Component {
   render() {
     return (
-      <div className='box'>
+      <div className={`box box${this.props.kind}`}>
         <div className='box-00'></div>
         <div className='box-narrow'></div>
         <div className='box-line'></div>
