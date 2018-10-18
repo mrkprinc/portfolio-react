@@ -5,15 +5,7 @@ class Projects extends Component {
   render() {
     return (
       <section>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
         {JSON.stringify(projects, null, 2)}
-=======
-        My Projects
->>>>>>> Stashed changes
-=======
-        My Projects
->>>>>>> Stashed changes
       </section>
     )
   }
