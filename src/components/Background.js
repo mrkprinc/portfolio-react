@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import BackgroundBox from "./BackgroundBox.js";
+import BackgroundBox from "./BackgroundBox/BackgroundBox.js";
 
 class Background extends Component {
   render() {
@@ -13,13 +13,15 @@ class Background extends Component {
   }
 
   buildGrid() {
-    let row = [];
+    let counter = 0;
     let grid = [];
-    for(let i=0; i<this.props.cols; i++) {
-      row.push(<BackgroundBox />);
-    }
-    for(let i=0; i<this.props.rows; i++) {
-      grid.push(<div className='row'>{row}</div>);
+    for(let i = 0; i < this.props.rows; i++) {
+      let row = [];
+      for(let j = 0; j < this.props.cols; j++) {
+        row.push(<BackgroundBox key={counter} kind={(i + j) % 4} />);
+        counter++;
+      }
+      grid.push(<div className='row' key={i}>{row}</div>);
     }
     return grid;
   }
