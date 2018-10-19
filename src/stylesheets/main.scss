@@ -89,5 +89,9 @@ header {
 
   .row {
     @extend %xCenter;
+
+    & > div {
+      transition: transform 15s;
+    }
   }
 }

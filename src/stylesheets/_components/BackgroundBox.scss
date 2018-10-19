@@ -1,7 +1,7 @@
 @import "../animations.scss";
 
 $boxSize: 300px;
-$opacity: 0.3;
+$opacity: 0.25;
 $orange: #fac79f;
 $blue: #425e7a;
 $red: #e22d28;
@@ -12,6 +12,7 @@ $red: #e22d28;
   position: relative;
   opacity: $opacity;
   flex-shrink: 0;
+  transition: transform 3s;
 
   div {
     position: absolute;
@@ -67,18 +68,6 @@ $red: #e22d28;
   }
 }
 
-.box0 {
-
-}
-
-.box1 {
+.rotate {
   transform: rotate(90deg);
-}
-
-.box2 {
-  transform: rotate(-90deg);
-}
-
-.box3 {
-  transform: rotate(180deg);
 }
