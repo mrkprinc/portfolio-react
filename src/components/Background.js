@@ -18,7 +18,7 @@ class Background extends Component {
     for(let i = 0; i < this.props.rows; i++) {
       let row = [];
       for(let j = 0; j < this.props.cols; j++) {
-        row.push(<BackgroundBox key={counter} kind={(i + j) % 4} />);
+        row.push(<BackgroundBox key={counter} index={counter} kind={(i + j) % 4} />);
         counter++;
       }
       grid.push(<div className='row' key={i}>{row}</div>);

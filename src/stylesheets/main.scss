@@ -6,6 +6,7 @@ $dark-red: #99080f;
 
 $body-font: 'Open Sans', sans-serif;
 $header-font: 'Georgia', serif;
+$header-size: 24px;
 $font-size: 16px;
 
 $max-width: 960px;
@@ -58,7 +59,7 @@ header {
   @include bottom-border($dark-red);
   background-color: $white;
   color: $dark-red;
-  font-size: 20px;
+  font-size: $header-size;
   font-family: $header-font;
   z-index: 10;
   overflow: hidden;
@@ -89,5 +90,9 @@ header {
 
   .row {
     @extend %xCenter;
+
+    & > div {
+      transition: transform 15s;
+    }
   }
 }
