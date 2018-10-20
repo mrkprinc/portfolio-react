@@ -6,20 +6,23 @@ class BackgroundBox extends Component {
   constructor(props) {
     super(props);
     this.boxRef = React.createRef();
-    this.timer = null;
+    [this.timer, this.animateOff] = [null, null];
   }
 
   componentDidMount() {
     this.timer = setInterval(() => {
       const rand = Math.floor(Math.random() * 12);
       if(this.props.index % 12 === rand && this.boxRef.current) {
-        this.boxRef.current.className = this.boxRef.current.className === 'rotate' ? "" : "rotate";
+        this.boxRef.current.classList.toggle('rotate');
       }
     }, 10000);
+    this.animateOff = setTimeout(() => {
+      if(this.boxRef.current) this.boxRef.current.classList.add('noAnimate');
+    }, 4000);
   }
 
   componentWillUnmount() {
-    this.timer = null;
+    [this.timer, this.animateOff] = [null, null];
   }
 
   render() {
@@ -29,8 +32,7 @@ class BackgroundBox extends Component {
         ref={this.boxRef}
       >
         <div 
-          className={`box box${this.props.kind}`} 
-          style={{transform: `rotate(${this.props.kind * 90}deg)`}}
+          className={`box box${this.props.kind}`}
         >
           <div className='box-00'></div>
           <div className='box-narrow'></div>

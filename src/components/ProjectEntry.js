@@ -1,5 +1,4 @@
 import React from 'react';
-import './ProjectEntry.css';
 
 const ProjectEntry = (props) => {
   return (
@@ -17,7 +16,7 @@ const ProjectEntry = (props) => {
 
       <div className='section-moreInfo'>
         <hr />
-        <p class='things-used'>
+        <p className='things-used'>
           <span>JavaScript</span>
           <span>jQuery</span>
           <span>Node.js</span>
