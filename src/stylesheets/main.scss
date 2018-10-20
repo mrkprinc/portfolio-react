@@ -83,6 +83,17 @@ header {
   }
 }
 
+main {
+  margin: 0 auto;
+  max-width: $max-width;
+
+  section {
+    // TEMP
+    border: 2px solid $black;
+    background-color: $white;
+  }
+}
+
 #background {
   @extend %cover;
   overflow: hidden;

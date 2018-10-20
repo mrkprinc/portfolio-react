@@ -1,3 +1,6 @@
+.noAnimate > * {
+  animation: none; }
+
 @keyframes slideInRight {
   from {
     transform: translateX(500px);
@@ -5,6 +8,32 @@
   to {
     transform: translateX(0);
     opacity: 1; } }
+
+@keyframes rollIn {
+  0% {
+    transform: translateX(300px) rotate(90deg);
+    opacity: 0.7; }
+  80% {
+    transform: rotate(-10deg); }
+  to {
+    transform: translateX(0) rotate(0deg);
+    opacity: 0.2; } }
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0; }
+  90% {
+    transform: translateX(20px); }
+  100% {
+    transform: translateX(0);
+    opacity: 0.3; } }
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
 
 #background {
   position: absolute;
@@ -35,7 +64,7 @@ header {
   box-shadow: 0 0 2px #99080f;
   background-color: #fcfaf9;
   color: #99080f;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Georgia", serif;
   z-index: 10;
   overflow: hidden; }
@@ -47,7 +76,7 @@ header {
       display: inline-block;
       padding: 10px 16px;
       animation: slideInRight;
-      animation-duration: 1.25s;
+      animation-duration: 2.5s;
       animation-fill-mode: both;
       animation-timing-function: ease-out; }
     header #heading-content #myName {
@@ -55,6 +84,13 @@ header {
       color: #fcfaf9;
       margin: 8px 0 0 8px;
       font-weight: 700; }
+
+main {
+  margin: 0 auto;
+  max-width: 960px; }
+  main section {
+    border: 2px solid #2c2934;
+    background-color: #fcfaf9; }
 
 #background {
   overflow: hidden;

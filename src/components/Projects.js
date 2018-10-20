@@ -5,9 +5,9 @@ import ProjectEntry from './ProjectEntry';
 class Projects extends Component {
   render() {
     return (
-      <section>
+      <main>
         <ProjectEntry />
-      </section>
+      </main>
     )
   }
 }
