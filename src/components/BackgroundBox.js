@@ -6,15 +6,16 @@ class BackgroundBox extends Component {
   constructor(props) {
     super(props);
     this.boxRef = React.createRef();
+    this.timer = null;
   }
 
-  timer = null;
-
   componentDidMount() {
-    const interval = 20 + Math.floor(Math.random() * 40);
     this.timer = setInterval(() => {
-      this.boxRef.current.className = this.boxRef.current.className === 'rotate' ? "" : "rotate";
-    }, interval * 1000);
+      const rand = Math.floor(Math.random() * 12);
+      if(this.props.index % 12 === rand && this.boxRef.current) {
+        this.boxRef.current.className = this.boxRef.current.className === 'rotate' ? "" : "rotate";
+      }
+    }, 10000);
   }
 
   componentWillUnmount() {
@@ -24,7 +25,7 @@ class BackgroundBox extends Component {
   render() {
     return (
       <div 
-        className={this.props.kind % 3 !== 0 ? "rotate" : ""}
+        className={this.props.kind % 2 === 0 ? "rotate" : ""}
         ref={this.boxRef}
       >
         <div 
