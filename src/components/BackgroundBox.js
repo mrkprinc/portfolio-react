@@ -28,7 +28,7 @@ class BackgroundBox extends Component {
   render() {
     return (
       <div 
-        className={this.props.kind % 2 === 0 ? "rotate" : ""}
+        className={`boxWrapper ${this.props.kind % 2 === 0 ? "rotate" : ""}`}
         ref={this.boxRef}
       >
         <div 

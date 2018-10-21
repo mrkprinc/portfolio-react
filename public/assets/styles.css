@@ -1,10 +1,16 @@
 .noAnimate > * {
   animation: none; }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 @keyframes slideInRight {
   from {
     transform: translateX(500px);
-    opacity: 0.5; }
+    opacity: 0; }
   to {
     transform: translateX(0);
     opacity: 1; } }
@@ -12,22 +18,18 @@
 @keyframes rollIn {
   0% {
     transform: translateX(300px) rotate(90deg);
-    opacity: 0.7; }
-  80% {
-    transform: rotate(-10deg); }
+    opacity: 0; }
   to {
     transform: translateX(0) rotate(0deg);
-    opacity: 0.2; } }
+    opacity: 1; } }
 
 @keyframes slideIn {
   0% {
     transform: translateX(-500px);
     opacity: 0; }
-  90% {
-    transform: translateX(20px); }
   100% {
     transform: translateX(0);
-    opacity: 0.3; } }
+    opacity: 1; } }
 
 @keyframes scaleIn {
   from {
@@ -60,8 +62,11 @@ body {
   color: #2c2934; }
 
 header {
-  border-bottom: 3px solid #99080f;
+  border: 3px solid #99080f;
   box-shadow: 0 0 2px #99080f;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   background-color: #fcfaf9;
   color: #99080f;
   font-size: 24px;
@@ -95,9 +100,7 @@ main {
 #background {
   overflow: hidden;
   z-index: -10; }
-  #background .row > div {
-<<<<<<< HEAD
-    transition: transform 5s; }
-=======
-    transition: transform 15s; }
->>>>>>> working
+  @media screen and (min-width: 1080px) {
+    #background {
+      left: 24px;
+      right: 24px; } }

@@ -11,7 +11,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state.rows = Math.ceil(window.innerHeight / 300);
-    this.state.cols = Math.ceil(window.innerWidth / 300);
+    let calculatedCols = Math.ceil(window.innerWidth / 300);
+    this.state.cols = calculatedCols > 5 ? 5 : calculatedCols;
     this.resizeGrid = this.resizeGrid.bind(this);
     window.resize = true;
     window.timer = null;

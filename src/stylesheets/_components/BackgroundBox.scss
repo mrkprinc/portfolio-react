@@ -6,6 +6,15 @@ $orange: #fac79f;
 $blue: #425e7a;
 $red: #e22d28;
 
+.boxWrapper {
+  opacity: $opacity;
+  transition: transform 15s;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
 .box {
   width: $boxSize;
   height: $boxSize;
@@ -68,18 +77,8 @@ $red: #e22d28;
   }
 }
 
-.rotate {
-  transform: rotate(90deg);
-}
-
 .box0 {
   @include animation(fadeIn);
-}
-
-@keyframes fadeIn {
-  0% {opacity: 0}
-  50% {opacity: 0.4}
-  100% {opacity: $opacity}
 }
 
 .box1 {

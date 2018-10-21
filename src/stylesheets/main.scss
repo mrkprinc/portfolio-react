@@ -11,6 +11,7 @@ $font-size: 16px;
 
 $max-width: 960px;
 $standard-padding: 10px 16px;
+$standard-margin: 16px;
 
 %cover {
   position: absolute;
@@ -31,10 +32,18 @@ $standard-padding: 10px 16px;
   @extend %xCenter;
 }
 
-@mixin bottom-border($color) {
-  border-bottom: 3px solid $color;
+@mixin standard-border($color) {
+  border: 3px solid $color;
   box-shadow: 0 0 2px $color;
 }
+
+@mixin bottom-border($color) {
+  @include standard-border($color);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
 @mixin dark($color) {
   background-color: $color;
   color: $white;
@@ -88,8 +97,9 @@ main {
   max-width: $max-width;
 
   section {
-    // TEMP
-    border: 2px solid $black;
+    @include standard-border($dark-red);
+    margin: $standard-margin 0;
+    padding: $standard-padding;
     background-color: $white;
   }
 }
@@ -101,9 +111,10 @@ main {
 
   .row {
     @extend %xCenter;
+  }
 
-    & > div {
-      transition: transform 15s;
-    }
+  @media screen and (min-width: 1080px) {
+    left: 24px;
+    right: 24px;
   }
 }
