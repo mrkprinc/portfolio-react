@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import {Header, Home, Projects, Background} from "./components/index";
+import {Header, Projects, Background} from "./components/index";
 
 class App extends Component {
   state = {
@@ -46,8 +46,7 @@ class App extends Component {
           <Header />
 
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/projects' component={Projects} />
+            <Route component={Projects} />
           </Switch>
 
           <Background rows={this.state.rows} cols={this.state.cols} />

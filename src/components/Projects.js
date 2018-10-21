@@ -6,6 +6,9 @@ class Projects extends Component {
   render() {
     return (
       <main>
+        <section>
+          <p>Hi! I'm Mark Prince.</p>
+        </section>
         <ProjectEntry />
       </main>
     )

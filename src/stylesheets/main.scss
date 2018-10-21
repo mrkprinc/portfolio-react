@@ -13,6 +13,9 @@ $max-width: 960px;
 $standard-padding: 10px 16px;
 $standard-margin: 16px;
 
+$small-breakpoint: 550px;
+$large-breakpoint: 1080px;
+
 %cover {
   position: absolute;
   top: 0;
@@ -35,6 +38,11 @@ $standard-margin: 16px;
 @mixin standard-border($color) {
   border: 3px solid $color;
   box-shadow: 0 0 2px $color;
+
+  @media screen and (max-width: $small-breakpoint) {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 @mixin bottom-border($color) {
@@ -98,9 +106,14 @@ main {
 
   section {
     @include standard-border($dark-red);
+    box-sizing: border-box;
     margin: $standard-margin 0;
     padding: $standard-padding;
     background-color: $white;
+  }
+
+  @media screen and (min-width: $small-breakpoint) {
+    width: 90%;
   }
 }
 
@@ -113,7 +126,7 @@ main {
     @extend %xCenter;
   }
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: $large-breakpoint) {
     left: 24px;
     right: 24px;
   }

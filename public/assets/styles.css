@@ -73,6 +73,10 @@ header {
   font-family: "Georgia", serif;
   z-index: 10;
   overflow: hidden; }
+  @media screen and (max-width: 550px) {
+    header {
+      border-left: none;
+      border-right: none; } }
   header #heading-content {
     position: relative;
     max-width: 960px;
@@ -94,8 +98,19 @@ main {
   margin: 0 auto;
   max-width: 960px; }
   main section {
-    border: 2px solid #2c2934;
+    border: 3px solid #99080f;
+    box-shadow: 0 0 2px #99080f;
+    box-sizing: border-box;
+    margin: 16px 0;
+    padding: 10px 16px;
     background-color: #fcfaf9; }
+    @media screen and (max-width: 550px) {
+      main section {
+        border-left: none;
+        border-right: none; } }
+  @media screen and (min-width: 550px) {
+    main {
+      width: 90%; } }
 
 #background {
   overflow: hidden;
