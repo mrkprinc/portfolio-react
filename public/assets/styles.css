@@ -1,3 +1,14 @@
+#background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+#background .row {
+  display: flex;
+  justify-content: center; }
+
 .noAnimate > * {
   animation: none; }
 
@@ -36,17 +47,6 @@
     transform: scale(0); }
   to {
     transform: scale(1); } }
-
-#background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
-#background .row {
-  display: flex;
-  justify-content: center; }
 
 html, body {
   position: absolute;
@@ -113,6 +113,7 @@ main {
       width: 90%; } }
 
 #background {
+  position: fixed;
   overflow: hidden;
   z-index: -10; }
   @media screen and (min-width: 1080px) {

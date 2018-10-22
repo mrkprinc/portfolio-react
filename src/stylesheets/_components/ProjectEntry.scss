@@ -1,0 +1,20 @@
+@import '../global.scss';
+
+.content {
+
+  .img-wrapper {
+    flex-shrink: 0;
+    overflow: hidden;
+
+    @extend %xCenter;
+  
+    @media screen and (min-width: $mid-breakpoint) {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: $mid-breakpoint) {
+    display: flex;
+    .text {padding: $standard-padding;}
+  }
+}
