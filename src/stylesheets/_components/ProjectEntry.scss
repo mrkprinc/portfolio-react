@@ -1,15 +1,23 @@
 @import '../global.scss';
 
 .content {
-
   .img-wrapper {
     flex-shrink: 0;
     overflow: hidden;
-
     @extend %xCenter;
-  
+
     @media screen and (min-width: $mid-breakpoint) {
       width: 50%;
+    }
+  }
+
+  .text {
+    p {
+      margin: $standard-margin 0;
+    }
+
+    h3 {
+      @extend p;
     }
   }
 

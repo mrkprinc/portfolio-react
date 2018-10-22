@@ -1,9 +1,8 @@
 @import "./global.scss";
 @import "./animations.scss";
 
-$body-font: 'Open Sans', sans-serif;
-$header-font: 'Georgia', serif;
 $header-size: 24px;
+$subheader-size: 20px;
 $font-size: 16px;
 
 @mixin bottom-border($color) {
@@ -66,6 +65,10 @@ main {
     margin: $standard-margin 0;
     padding: $standard-padding;
     background-color: $white;
+
+    h3 {
+      @extend %sub-heading;
+    }
   }
 
   @media screen and (min-width: $small-breakpoint) {
@@ -78,6 +81,7 @@ main {
   position: fixed;
   overflow: hidden;
   z-index: -10;
+  background-color: $shadow;
 
   .row {
     @extend %xCenter;

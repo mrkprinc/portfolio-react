@@ -1,4 +1,11 @@
+$body-font: 'Open Sans', sans-serif;
+$header-font: 'Georgia', serif;
+$header-size: 24px;
+$subheader-size: 20px;
+$font-size: 16px;
+
 $white: #fcfaf9;
+$shadow: #e7e7e6;
 $black: #2c2934;
 $dark-red: #99080f;
 
@@ -27,6 +34,13 @@ $large-breakpoint: 1080px;
   flex-direction: column;
   align-items: center;
   @extend %xCenter;
+}
+
+%sub-heading {
+  font-family: $header-font;
+  font-size: $subheader-size;
+  letter-spacing: 1px;
+  color: $dark-red;
 }
 
 @mixin standard-border($color) {

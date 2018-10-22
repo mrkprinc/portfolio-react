@@ -83,6 +83,7 @@ $red: #e22d28;
 
 .box1 {
   @include animation(rollIn);
+  animation-delay: 0.75s;
   transform: rotate(180deg);
 }
 
