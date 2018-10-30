@@ -1,6 +1,24 @@
 [
   {
-    "name": "Project 1"
+    "name": "FriendFinder",
+    "description": "A full-stack \"find-your-best-match\" app, using Express.js and Node.",
+    "imgSrc": "./assets/images/FriendFinder-screenshot.PNG",
+    "liveURL": "https://fast-dusk-77293.herokuapp.com/",
+    "githubURL": "https://github.com/mrkprinc/FriendFinder"
+  },
+  {
+    "name": "Rock-Paper-Scissors",
+    "description": "An online multiplayer game using JavaScript and Firebase.",
+    "imgSrc": "./assets/images/RPS-screenshot.PNG",
+    "liveURL": "https://mrkprinc.github.io/RPS-Multiplayer/",
+    "githubURL": "https://github.com/mrkprinc/RPS-Multiplayer"
+  },
+  {
+    "name": "Buffy Quiz",
+    "description": "A trivia game using CSS animations and jQuery.",
+    "imgSrc": "./assets/images/TriviaGame-screenshot.PNG",
+    "liveURL": "https://mrkprinc.github.io/TriviaGame/",
+    "githubURL": "https://github.com/mrkprinc/TriviaGame"
   }
 ]
 

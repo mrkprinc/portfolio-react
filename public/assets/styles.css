@@ -65,6 +65,7 @@ body {
   background-color: #fcfaf9;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  line-height: 1.4;
   color: #2c2934; }
 
 header {
@@ -107,7 +108,7 @@ main {
     border: 3px solid #99080f;
     box-shadow: 0 0 2px #99080f;
     box-sizing: border-box;
-    margin: 16px 0;
+    margin: 34px 0;
     padding: 10px 16px;
     background-color: #fcfaf9; }
     @media screen and (max-width: 550px) {
@@ -117,6 +118,9 @@ main {
   @media screen and (min-width: 550px) {
     main {
       width: 90%; } }
+
+.text p, .text h3 {
+  margin: 16px 0; }
 
 #background {
   position: fixed;

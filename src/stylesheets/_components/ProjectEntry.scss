@@ -11,16 +11,6 @@
     }
   }
 
-  .text {
-    p {
-      margin: $standard-margin 0;
-    }
-
-    h3 {
-      @extend p;
-    }
-  }
-
   @media screen and (min-width: $mid-breakpoint) {
     display: flex;
     .text {padding: $standard-padding;}

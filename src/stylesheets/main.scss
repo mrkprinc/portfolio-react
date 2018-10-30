@@ -1,10 +1,6 @@
 @import "./global.scss";
 @import "./animations.scss";
 
-$header-size: 24px;
-$subheader-size: 20px;
-$font-size: 16px;
-
 @mixin bottom-border($color) {
   @include standard-border($color);
   border-top: none;
@@ -24,6 +20,7 @@ body {
   background-color: $white;
   font-family: $body-font;
   font-size: $font-size;
+  line-height: 1.4;
   color: $black;
 }
 
@@ -62,7 +59,7 @@ main {
   section {
     @include standard-border($dark-red);
     box-sizing: border-box;
-    margin: $standard-margin 0;
+    margin: $wide-margin 0;
     padding: $standard-padding;
     background-color: $white;
 
@@ -73,6 +70,12 @@ main {
 
   @media screen and (min-width: $small-breakpoint) {
     width: 90%;
+  }
+}
+
+.text {
+  p, h3 {
+    margin: $standard-margin 0;
   }
 }
 
