@@ -118,12 +118,13 @@ main {
       main section {
         border-left: none;
         border-right: none; } }
+  main .text > * {
+    padding: 4px 0; }
   @media screen and (min-width: 550px) {
     main {
-      width: 90%; } }
-
-.text p, .text h3 {
-  margin: 16px 0; }
+      width: 90%; }
+      main .text {
+        padding: 10px 16px; } }
 
 #background {
   position: fixed;

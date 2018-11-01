@@ -9,7 +9,7 @@ const ProjectEntry = (props) => {
         <div className={entry.imgWrapper}>
           <img src={props.imgSrc} alt={`${props.name} screenshot`} />
         </div>
-        <div className={entry.text}>
+        <div className='text'>
           <h3>{props.name}</h3>
           <p>{props.description}</p>
           <p><span role='img' aria-label='live'>🔴</span> <a href={props.liveURL} target='_blank' rel='noopener noreferrer'>Live Page</a></p>

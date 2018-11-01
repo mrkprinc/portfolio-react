@@ -70,14 +70,15 @@ main {
     }
   }
 
+  .text {
+    & > * {
+      padding: 4px 0;
+    }
+  }
+
   @media screen and (min-width: $small-breakpoint) {
     width: 90%;
-  }
-}
-
-.text {
-  p, h3 {
-    margin: $standard-margin 0;
+    .text {padding: $standard-padding};
   }
 }
 

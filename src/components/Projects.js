@@ -14,7 +14,7 @@ class Projects extends Component {
         <p>
           I'm a full-stack developer with a background in digital marketing. 
           Right now, I'm finishing up a 6-month coding bootcamp at U of T.
-          You can learn more about me on 
+          You can learn more about me on&nbsp;
           <a href='https://linkedin.com/in/mark-prince' target='_blank' rel='noopener noreferrer'>LinkedIn</a>. 
         </p>
         <p>Below, you'll find some of the projects I've worked on.</p>
