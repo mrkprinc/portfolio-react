@@ -13,7 +13,7 @@ class BackgroundBox extends Component {
     this.timer = setInterval(() => {
       const rand = Math.floor(Math.random() * 12);
       if(this.props.index % 12 === rand && this.boxRef.current) {
-        this.boxRef.current.classList.toggle('rotate');
+        this.boxRef.current.classList.toggle(`${box.rotate}`);
       }
     }, 10000);
     this.animateOff = setTimeout(() => {
