@@ -1,15 +1,15 @@
 import React from 'react';
-import './ProjectEntry.css';
+import entry from './ProjectEntry.module.css';
 
 const ProjectEntry = (props) => {
   return (
     <section>
 
-      <div className='content'>
-        <div className='img-wrapper'>
+      <div className={entry.content}>
+        <div className={entry.imgWrapper}>
           <img src={props.imgSrc} alt={`${props.name} screenshot`} />
         </div>
-        <div className='text'>
+        <div className={entry.text}>
           <h3>{props.name}</h3>
           <p>{props.description}</p>
           <p><span role='img' aria-label='live'>🔴</span> <a href={props.liveURL} target='_blank' rel='noopener noreferrer'>Live Page</a></p>

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./BackgroundBox.css";
+import box from "./BackgroundBox.module.css";
 
 class BackgroundBox extends Component {
 
@@ -26,20 +26,29 @@ class BackgroundBox extends Component {
   }
 
   render() {
+    let boxType;
+    switch(this.props.kind) {
+      case 0: boxType = box.box0; break;
+      case 1: boxType = box.box1; break;
+      case 2: boxType = box.box2; break;
+      case 3: boxType = box.box3; break;
+      default: boxType = box.box0
+    }
+
     return (
       <div 
-        className={`boxWrapper ${this.props.kind % 2 === 0 ? "rotate" : ""}`}
+        className={`${box.boxWrapper} ${this.props.kind % 2 === 0 ? box.rotate : ""}`}
         ref={this.boxRef}
       >
         <div 
-          className={`box box${this.props.kind}`}
+          className={`${box.box} ${boxType}`}
         >
-          <div className='box-00'></div>
-          <div className='box-narrow'></div>
-          <div className='box-line'></div>
-          <div className='box-10'></div>
-          <div className='box-01'></div>
-          <div className='box-11'></div>
+          <div className={box.box00}></div>
+          <div className={box.boxNarrow}></div>
+          <div className={box.boxLine}></div>
+          <div className={box.box10}></div>
+          <div className={box.box01}></div>
+          <div className={box.box11}></div>
         </div>
       </div>
     )

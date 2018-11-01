@@ -1,7 +1,7 @@
 @import '../global.scss';
 
 .content {
-  .img-wrapper {
+  .imgWrapper {
     flex-shrink: 0;
     overflow: hidden;
     @extend %xCenter;
