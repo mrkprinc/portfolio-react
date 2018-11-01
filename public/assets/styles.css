@@ -9,6 +9,9 @@
   display: flex;
   justify-content: center; }
 
+header, main section {
+  background-image: linear-gradient(to bottom right, transparent, rgba(0, 0, 0, 0.05)); }
+
 main section h3 {
   font-family: "Georgia", serif;
   font-size: 20px;
@@ -74,7 +77,7 @@ header {
   border-top: none;
   border-left: none;
   border-right: none;
-  background-color: #fcfaf9;
+  background-color: rgba(255, 255, 255, 0.95);
   color: #99080f;
   font-size: 24px;
   font-family: "Georgia", serif;
@@ -110,7 +113,7 @@ main {
     box-sizing: border-box;
     margin: 34px 0;
     padding: 10px 16px;
-    background-color: #fcfaf9; }
+    background-color: rgba(255, 255, 255, 0.95); }
     @media screen and (max-width: 550px) {
       main section {
         border-left: none;

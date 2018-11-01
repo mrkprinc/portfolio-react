@@ -26,7 +26,8 @@ body {
 
 header {
   @include bottom-border($dark-red);
-  background-color: $white;
+  background-color: $white-rgba;
+  @extend %back-gradient;
   color: $dark-red;
   font-size: $header-size;
   font-family: $header-font;
@@ -61,7 +62,8 @@ main {
     box-sizing: border-box;
     margin: $wide-margin 0;
     padding: $standard-padding;
-    background-color: $white;
+    background-color: $white-rgba;
+    @extend %back-gradient;
 
     h3 {
       @extend %sub-heading;

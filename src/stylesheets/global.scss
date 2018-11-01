@@ -5,8 +5,10 @@ $subheader-size: 20px;
 $font-size: 16px;
 
 $white: #fcfaf9;
+$white-rgba: rgba(255, 255, 255, 0.95);
 $shadow: #e7e7e6;
 $black: #2c2934;
+$light-black: rgba(0,0,0,0.02);
 $dark-red: #99080f;
 
 $max-width: 960px;
@@ -35,6 +37,10 @@ $large-breakpoint: 1080px;
   flex-direction: column;
   align-items: center;
   @extend %xCenter;
+}
+
+%back-gradient {
+  background-image: linear-gradient(to bottom right, transparent, $light-black);
 }
 
 %sub-heading {

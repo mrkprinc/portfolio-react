@@ -5,6 +5,7 @@
     flex-shrink: 0;
     overflow: hidden;
     @extend %xCenter;
+    border: 1px solid $shadow;
 
     @media screen and (min-width: $mid-breakpoint) {
       width: 50%;
