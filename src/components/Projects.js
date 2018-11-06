@@ -12,12 +12,11 @@ class Projects extends Component {
         <section className='text'>
         <p>Hi! I'm Mark Prince.</p>
         <p>
-          I'm a full-stack developer with a background in digital marketing. 
-          Right now, I'm finishing up a 6-month coding bootcamp at U of T.
+          Right now, I'm finishing up a 6-month intensive web development course at the University of Toronto. 
           You can learn more about me on&nbsp;
           <a href='https://linkedin.com/in/mark-prince' target='_blank' rel='noopener noreferrer'>LinkedIn</a>. 
         </p>
-        <p>Below, you'll find some of the projects I've worked on.</p>
+        <p>Below, you'll find some of the projects I've been working on.</p>
         </section>
         {projectEntries}
       </main>

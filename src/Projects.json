@@ -1,35 +1,40 @@
 [
   {
     "name": "Memory Game",
-    "description": "A memory game built with React and CSS animations.",
+    "description": "A memory game - don't click the same image twice!",
+    "toolsUsed": ["React.js", "CSS Animations"],
     "imgSrc": "./assets/images/MemoryGame-screenshot.PNG",
     "liveURL": "https://mrkprinc.github.io/memory-game/",
     "githubURL": "https://github.com/mrkprinc/memory-game"
   },
   {
     "name": "News Scraper",
-    "description": "An app that scrapes headlines from The Guardian's website and save notes using MongoDB.",
+    "description": "This app scrapes headlines from The Guardian's website, and lets users save their own annotations.",
+    "toolsUsed": ["MongoDB", "Node.js", "Express.js"],
     "imgSrc": "./assets/images/NewsScraper-screenshot.PNG",
     "liveURL": "https://warm-temple-61527.herokuapp.com/",
     "githubURL": "https://github.com/mrkprinc/NewsScraper"
   },
   {
     "name": "FriendFinder",
-    "description": "A full-stack \"find-your-best-match\" app, using Express.js and Node.",
+    "description": "A full-stack \"find-your-best-match\" app. Could Elton be your platonic soulmate?",
+    "toolsUsed": ["Node.js", "Express.js", "RESTful API"],
     "imgSrc": "./assets/images/FriendFinder-screenshot.PNG",
     "liveURL": "https://fast-dusk-77293.herokuapp.com/",
     "githubURL": "https://github.com/mrkprinc/FriendFinder"
   },
   {
     "name": "Rock-Paper-Scissors",
-    "description": "An online multiplayer game using JavaScript and Firebase.",
+    "description": "An online multiplayer game. In case you're the only one here, you might want to open it in multiple windows.",
+    "toolsUsed": ["JavaScript", "jQuery", "Firebase"],
     "imgSrc": "./assets/images/RPS-screenshot.PNG",
     "liveURL": "https://mrkprinc.github.io/RPS-Multiplayer/",
     "githubURL": "https://github.com/mrkprinc/RPS-Multiplayer"
   },
   {
     "name": "Buffy Quiz",
-    "description": "A trivia game using CSS animations and jQuery.",
+    "description": "A trivia game - how well do you know one of my favourite shows? I coded the animation by hand with CSS, no libraries included.",
+    "toolsUsed": ["JavaScript", "jQuery", "CSS Animations"],
     "imgSrc": "./assets/images/TriviaGame-screenshot.PNG",
     "liveURL": "https://mrkprinc.github.io/TriviaGame/",
     "githubURL": "https://github.com/mrkprinc/TriviaGame"

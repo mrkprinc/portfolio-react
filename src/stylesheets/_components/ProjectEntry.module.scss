@@ -2,6 +2,7 @@
 
 .content {
   .imgWrapper {
+    position: relative;
     flex-shrink: 0;
     overflow: hidden;
     @extend %xCenter;
@@ -10,9 +11,28 @@
     @media screen and (min-width: $mid-breakpoint) {
       width: 50%;
     }
+
+    .imgFilter {
+      @extend %cover;
+      background-color: #000066;
+      opacity: 0.02;
+    }
   }
 
   @media screen and (min-width: $mid-breakpoint) {
     display: flex;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  .toolUsed {
+    background-color: #fce3cf;
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin-right: 4px;
+    white-space: nowrap;
+    cursor: default;
   }
 }
